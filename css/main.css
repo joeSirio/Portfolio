@@ -1,0 +1,330 @@
+html, body{
+    padding:0;
+    margin:0;
+    overflow-x:hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*General *****************************************************************************************************/
+.flex{
+    display:flex;
+    width:100%;
+}
+.overflow-hidden{
+    overflow:hidden;
+}
+#Background{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:-1;
+    font-size:54px;
+    color:#374C4C;
+    flex-direction: column;
+
+    letter-spacing: 20px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+#Name, #Occupation{
+    opacity: 0.5 !important;
+    font-weight:bold;
+}
+.section-title{
+    width: 100%;
+    height: 55px;
+    text-align:center;
+    background:#374C4C;
+    color:#fff;
+    padding-top:10px;
+    letter-spacing: 8px;
+}
+
+/*Header *****************************************************************************************************/
+#Header{
+    position:fixed;
+    width:100%;
+    z-index: 1001;
+    background: rgba(0,0,0,0.45);
+}
+nav a{
+    color:#fff;
+    letter-spacing: 2px;
+}
+nav a:hover{
+    color: rgba(255,255,255,0.5);
+}
+#MobileButton, #MobileClose, #MobileMenu{
+    display:none;
+    z-index:999;
+    color:#fff;
+}
+#MobileMenu{
+    border-top:1px solid #000;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+#MobileMenu a{
+    color:#fff;
+}
+
+
+
+/*Canvas *****************************************************************************************************/
+#CanvasWrapper{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    z-index: 997;
+}
+#CanvasOverlay{
+    position:absolute;
+    height:100vh;
+    left:-6px;
+    right:0;
+    z-index: 998;
+    display: none;
+}
+
+
+
+/*About *****************************************************************************************************/
+#About{
+    height:50vh;
+    width:100vw;
+    justify-content: center;
+    margin-top:100vh;
+    text-align:center;
+    background:#fff;
+}
+.about-image img{
+    max-height:100%;
+    max-width:100%;
+}
+#AboutWrapper{
+    height: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+/*Skills *****************************************************************************************************/
+#Skills{
+    height:50vh;
+    width:100vw;
+    justify-content: center;
+    text-align:center;
+    background:#fff;
+}
+#SkillsWrapper{
+    height: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+#SkillsWrapper ul{
+    list-style: none;
+}
+.second-level-list{
+    list-style: disc !important;
+}
+.skill-title{
+    text-align:center;
+    padding-bottom:25px;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+.skill-section{
+    background:rgba(100,100,100,0.25);
+    border:1px solid #374C4C;
+    padding:25px 15px;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+#Frontend{
+    background-image: url("../img/javascript.png");
+    background-size:cover;
+    color:#fff;
+    height:100%;
+}
+#Backend{
+    background-image: url("../img/CSharp.png");
+    background-size:cover;
+    color:#fff;
+    height:100%;
+}
+#Other{
+    background-image: url("../img/git.png");
+    background-size:cover;
+    color:#fff;
+    height:100%;
+}
+#Frontend:hover, #Backend:hover, #Other:hover{
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+}
+
+
+
+
+/*Projects *****************************************************************************************************/
+#Projects{
+    height:50vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    background:#fff;
+}
+#Projects h2{
+    flex:0.25;
+}
+#Projects h3{
+    margin-bottom:50px;
+    color:#374C4C;
+    font-weight:bold;
+    text-decoration: underline;
+}
+#Projects h4{
+    color:#374C4C;
+    font-weight:bold;
+}
+#Projects .flex{
+    flex-direction:row;
+    text-align:center;
+    align-items:center;
+    justify-content: center;
+    height:100%;
+}
+
+
+
+/*Contact *****************************************************************************************************/
+#Contact{
+    height:50vh;
+    width:100vw;
+    background:#fff;
+    display:flex;
+    flex-direction: row;
+}
+#ContactInfo{
+    display: flex;
+    flex:1;
+    text-align:center;
+    flex-direction:column;
+}
+.contact-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Contact label{
+    font-size:20px;
+    color:#374C4C;
+    font-weight:bold;
+}
+#Contact a{
+    color:#000;
+    text-decoration:none;
+}
+
+
+/*Mobile *****************************************************************************************************/
+@media (max-width:992px) {
+    .navbar{
+        height:55px;
+    }
+    .navbar-brand{
+        padding-left:15px;
+    }
+    #Header a{
+        font-size: 1rem;
+    }
+    #MobileButton{
+        display:block;
+    }
+    #MobileButton, #MobileClose{
+        padding-right:15px;
+    }
+    #Name{
+        top: 49%;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    #Occupation{
+         font-size: 30px;
+         letter-spacing: 5px;
+     }
+    #Skills{
+        min-height:150vh;
+        height:auto;
+    }
+    #Skills .section-title{
+        margin-bottom:25px;
+    }
+    #About{
+        height:100vh;
+    }
+    #Projects{
+        height:100vh;
+    }
+    #Contact{
+        height:50vh;
+    }
+    #ContactInfo{
+    }
+
+    .about-image{
+        margin-bottom:100px;
+    }
+    .skill-section-wrapper{
+        margin-bottom:15px;
+        margin-top:15px;
+    }
+}
+
+
+
+
+.sd {
+    color: #000;
+}
+.sd{
+    color:#001919;
+}
+.sd {
+    color: #0D1F21;
+}
+.sd {
+    color: #374C4C;
+}
+.sd {
+    color: #576869;
+}
+
+
+
+
+
