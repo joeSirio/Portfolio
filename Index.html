@@ -15,7 +15,7 @@
 <div id="PageWrapper">
     <div id="Header">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#PageWrapper">Joe Cangelosi</a>
+            <a class="navbar-brand" href="#Home">Joe Cangelosi</a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -23,16 +23,13 @@
                         <!--<a class="nav-link" href="#PageWrapper">Home</a>-->
                     <!--</li>-->
                     <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
+                        <a class="nav-link Home-link" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Skills">Skills</a>
+                        <a class="nav-link About-link" href="#About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
+                        <a class="nav-link Projects-link" href="#Projects">Projects</a>
                     </li>
                 </ul>
             </div>
@@ -43,11 +40,11 @@
         <div id="MobileMenu">
             <!--<a href="#PageWrapper">Home</a>-->
             <a href="#About">About</a>
-            <a href="#Skills">Skills</a>
             <a href="#Projects">Projects</a>
-            <a href="#Contact">Contact</a>
         </div>
     </div>
+
+    <div id="Home"></div>
 
     <div class="overflow-hidden">
         <div id="About">
@@ -56,110 +53,135 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 about-image">
-                            <img src="img/Colorado.png" />
+                            <img src="img/me.jpg" />
                         </div>
                         <div class="col-md-8">
                             <p>
-                                Hello! I have been a software developer for 4 years for which I work at a consulting firm.
-                                There I develop custom software for clients from the ground up.
-                                This challenging environment helped propel my knowledge and skills.
+                                Hello! I am a fullstack engineer working with a variety of different and challenging projects. 
+                                I have a lot of experience with the Microsoft stack, while exploring other technologies with personal projects such as react.js and python.
+                                I've grown passionate about creating interactive frontend experiences for users and want to dive deeper into this realm with my next role.
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            <p>See my <a href="./img/Resume_Joe_Cangelosi.pdf" target="_blank">resume</a> for more information!</p>
 
-        <div id="Skills">
-            <div class="section-title"><h2>Skills</h2></div>
-            <div id="SkillsWrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-4 skill-section-wrapper">
-                            <div id="Frontend" class="skill-section">
-                                <h3 class="skill-title">Front End</h3>
-                                <ul>
-                                    <li>HTML5</li>
-                                    <li>CSS3</li>
-                                    <li>Javascript</li>
-                                    <li>jQuery</li>
-                                    <li>Ajax</li>
-                                    <li>Angular</li>
-                                    <li>TypeScript</li>
-                                    <li>Bootstrap</li>
-                                    <li>Kendo</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4 skill-section-wrapper">
-                            <div id="Backend" class="skill-section">
-                                <h3 class="skill-title">Backend</h3>
-                                <ul>
-                                    <li>C#</li>
-                                    <li>ASP.NET</li>
-                                    <li>MVC</li>
-                                    <li>Web Api</li>
-                                    <li>LINQ</li>
-                                    <li>SQL Server</li>
-                                    <li>SSIS</li>
-                                    <li>Entity Framework</li>
-                                    <li>Hangfire</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4 skill-section-wrapper">
-                            <div id="Other" class="skill-section">
-                                <h3 class="skill-title">Other</h3>
-                                <ul>
-                                    <li>
-                                        Amazon Web Services
-                                        <ul class="second-level-list">
-                                            <li>S3</li>
-                                            <li>SES</li>
-                                            <li>Lambda</li>
-                                            <li>SQS</li>
-                                        </ul>
-                                    </li>
-                                    <li>Git Bash</li>
-                                    <li>Jira</li>
-                                    <li>Bitbucket</li>
-                                    <li>Jenkins</li>
-                                </ul>
+                            <p>Contact me at <a href="mailto:joe.sirio22@gmail.com">joe.sirio22@gmail.com</a></p>
+
+                            <div class="github-link"> <a href="https://github.com/joeSirio" target="_blank"></a></div>
+                            
+                            <br/>
+                            
+                            <div class="skills-section">
+                                <div class="skills-btn">Skills</div>
+                                <div class="skills-info">
+                                    react.js, angular, css3, html5, javascript, jquery
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div id="Projects">
             <div class="section-title"><h2>Projects</h2></div>
-            <div class="flex">
-                <div id="Website">
-                    <h3>Works In Progress: </h3>
-                    <div>
-                        <h4>Swell Forecast:</h4>
-                        <p>An iPhone / Mac app that indicates the upcoming swell information for the week at a given location</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mt-75">
+                        <div class="project-wrapper">
+                            <div class="project-info">
+                                <video src="https://user-images.githubusercontent.com/44539191/231569255-abd78d70-10d2-4a9b-bf8f-7d0ba24a029a.mp4" data-canonical-src="https://user-images.githubusercontent.com/44539191/231569255-abd78d70-10d2-4a9b-bf8f-7d0ba24a029a.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px"></video>
+                                <div class="project-info-text" onclick="onProjectLinkClick('https://google.com')">
+                                    <h4>Skate Feed <div class="github-icon" onclick="onProjectLinkClick('https://github.com/joeSirio/skate-feed')"></div></h4>
+                                    <p>Creating a easier way to browse skateboarding videos in a single place instead of opening millions of tabs.</p>
+                                    <div class="project-skills">
+                                        <div class="project-skill-item">react.js</div>
+                                        <div class="project-skill-item">CSS3</div>
+                                        <div class="project-skill-item">HTML 5</div>
+                                        <div class="project-skill-item">javascript</div>
+                                        <div class="project-skill-item">python</div>
+                                        <div class="project-skill-item">flask api</div>
+                                        <div class="project-skill-item">postgreSQL</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h4>Google Chrome Extension:</h4>
-                        <p>A Chrome Extension that when hitting a hot key, will open a new tab with a google search of the selected text</p>
+                    <div class="col-md-6 mt-75">
+                        <div class="project-wrapper">
+                            <div class="project-info">
+                                <video src="https://user-images.githubusercontent.com/44539191/231569255-abd78d70-10d2-4a9b-bf8f-7d0ba24a029a.mp4" data-canonical-src="https://user-images.githubusercontent.com/44539191/231569255-abd78d70-10d2-4a9b-bf8f-7d0ba24a029a.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px"></video>
+                                <div class="project-info-text" onclick="onProjectLinkClick('https://google.com')">
+                                    <h4>M.O. <div class="github-icon" onclick="onProjectLinkClick('https://github.com/joeSirio/TimeTracker')"></div></h4>
+                                    <p>Daily habit tracker app, created to fit my needs where the current market was not able to.</p>
+                                    <div class="project-skills">
+                                        <div class="project-skill-item">react.js</div>
+                                        <div class="project-skill-item">CSS3</div>
+                                        <div class="project-skill-item">HTML 5</div>
+                                        <div class="project-skill-item">javascript</div>
+                                        <div class="project-skill-item">python</div>
+                                        <div class="project-skill-item">fast api</div>
+                                        <div class="project-skill-item">postgreSQL</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h4>UPoints:</h4>
-                        <p>This is a .Net Core project which keeps track of arbitrary points between users. Allows them to award and wager points for specified tasks</p>
+                    <div class="col-md-6 mt-75">
+                        <div class="project-wrapper">
+                            <div class="project-info">
+                                <img alt="Time tracker snapshot" src="https://user-images.githubusercontent.com/44539191/222349016-9e7f5038-fd33-471c-abdd-7d05854fe73c.png" style="max-width: 100%;" />
+                                <div class="project-info-text" onclick="onProjectLinkClick('https://google.com')">
+                                    <h4>Time Tracker <div class="github-icon" onclick="onProjectLinkClick('https://github.com/joeSirio/TimeTracker')"></div></h4>
+                                    <p>This is a recreation of existing time tracker applications. The frontend is created using react.js and will retrieve data from an api created in python using flask.</p>
+                                    <div class="project-skills">
+                                        <div class="project-skill-item">react.js</div>
+                                        <div class="project-skill-item">CSS3</div>
+                                        <div class="project-skill-item">HTML 5</div>
+                                        <div class="project-skill-item">javascript</div>
+                                        <div class="project-skill-item">python</div>
+                                        <div class="project-skill-item">fast api</div>
+                                        <div class="project-skill-item">postgreSQL</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="Contact">
-            <div id="ContactInfo">
-                <div class="section-title"><h2>Contact</h2></div>
-                <div class="contact-wrapper">
-                    <p><label>Name:</label> Joe Cangelosi</p>
-                    <p><label>Phone:</label> <a href="tel:5169960291">(516) 996 0291</a></p>
-                    <p><label>Email:</label> <a href="mailto:Joe.Sirio22@gmail.com">Joe.Sirio22@gmail.com</a></p>
+                    <div class="col-md-6 mt-75">
+                        <div class="project-wrapper">
+                            <div class="project-info">
+                                <video src="https://user-images.githubusercontent.com/44539191/222039293-aa221883-45f7-4274-98a8-a50d8ffb7958.mov" data-canonical-src="https://user-images.githubusercontent.com/44539191/222039293-aa221883-45f7-4274-98a8-a50d8ffb7958.mov" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px"></video>
+                                <div class="project-info-text" onclick="onProjectLinkClick('https://google.com')">
+                                    <h4>Quick Search <div class="github-icon" onclick="onProjectLinkClick('https://github.com/joeSirio/QuickSearch-ChromeExt')"></div></h4>
+                                    <p>A convenient way to google search words directly on the browser. Simply highlight a word and hit a customizable hotkey resulting in a new tab with a google search of the highlighted phrase.</p>
+                                    <div class="project-skills">
+                                        <div class="project-skill-item">javascript</div>
+                                        <div class="project-skill-item">chrome API</div>
+                                        <div class="project-skill-item">CSS3</div>
+                                        <div class="project-skill-item">HTML 5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-75">
+                        <div class="project-wrapper">
+                            <div class="project-info">
+                                <video src="https://user-images.githubusercontent.com/44539191/222039293-aa221883-45f7-4274-98a8-a50d8ffb7958.mov" data-canonical-src="https://user-images.githubusercontent.com/44539191/222039293-aa221883-45f7-4274-98a8-a50d8ffb7958.mov" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px"></video>
+                                <div class="project-info-text" onclick="onProjectLinkClick('https://google.com')">
+                                    <h4>LaChat<div class="github-icon" onclick="onProjectLinkClick('https://github.com/joeSirio/QuickSearch-ChromeExt')"></div></h4>
+                                    <p>An AI querying tool that responds with jokes</p>
+                                    <div class="project-skills">
+                                        <div class="project-skill-item">react.js</div>
+                                        <div class="project-skill-item">next.js</div>
+                                        <div class="project-skill-item">CSS3</div>
+                                        <div class="project-skill-item">HTML 5</div>
+                                        <div class="project-skill-item">javascript</div>
+                                        <div class="project-skill-item">python</div>
+                                        <div class="project-skill-item">fast api</div>
+                                        <div class="project-skill-item">postgreSQL</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

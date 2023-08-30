@@ -1,6 +1,19 @@
+let aboutLocation = 0;
+let projectLocation = 0;
+
 $(function(){
+    aboutLocation = $("#About").offset().top - 76;
+    projectLocation = $("#Projects").offset().top - 76;
+    onScroll();
     animateScrolling();
     animateGreeting(['Name', 'Occupation']);
+
+    window.addEventListener("scroll", onScroll)
+    $(".skills-btn").hover(function() {
+        $('.skills-info').addClass( "hover" );
+      }, function() {
+        $('.skills-info').removeClass( "hover" );
+      });
 
     $(".mobile-togglers").on("click", function(){
         $("#MobileButton").toggle();
@@ -23,7 +36,7 @@ function animateScrolling(){
         }
 
         $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
+            scrollTop: $($.attr(this, 'href')).offset().top - 75
         }, 750);
     });
 }
@@ -71,5 +84,25 @@ function animateGreeting(identifiers){
                 }
             }
         });
+    }
+}
+
+function onProjectLinkClick(url){
+    event.stopPropagation()
+    var win = window.open(url, '_blank');
+    win.focus();
+}
+
+function onScroll(){
+    let pos = window.top.scrollY;
+        $(".nav-link").removeClass('active');
+    if(pos > projectLocation){
+        $(".Projects-link").addClass('active');
+    }
+    else if(pos > aboutLocation){
+        $(".About-link").addClass('active');
+    }
+    else{
+        $(".Home-link").addClass('active');
     }
 }
