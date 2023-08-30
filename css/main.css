@@ -108,6 +108,9 @@ nav a:hover{
     width: 100%;
     padding-top:15px;
     padding-bottom:15px;
+    position: fixed;
+    top:75px;
+    background:rgba(0,0,0,0.75);
 }
 
 #MobileMenu a{
@@ -148,7 +151,6 @@ nav a:hover{
 }
 #AboutWrapper{
     min-height: 50vh;
-    margin-top: -25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,6 +351,8 @@ nav a:hover{
 
     .about-image{
         margin-bottom:100px;
+        width:100%;
+        margin-top:25px;
     }
     .skill-section-wrapper{
         margin-bottom:15px;
