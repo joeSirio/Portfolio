@@ -89,6 +89,7 @@ function animateGreeting(identifiers){
 
 function onProjectLinkClick(url){
     event.stopPropagation()
+    console.log(url)
     var win = window.open(url, '_blank');
     win.focus();
 }
